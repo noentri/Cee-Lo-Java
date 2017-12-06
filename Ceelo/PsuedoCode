@@ -1,0 +1,59 @@
+A gambling game played with 3 dice, 2-4 players
+
+Cee Lo Game()
+
+create 3 dice
+
+variables
+    String p1, p2, p3, p4
+    int points, bet1, bet2, bet3, bet4, bal1, bal2, bal3, bal4, i = 0
+    String[] players(i)
+
+main()
+
+    loadData()
+
+    menu
+        (1)Play Game
+
+         2)load game from file()
+            read in strings and ints from text file into arrays
+            Enter Bet Amount
+            play new game
+                Create # of Players (2-4)
+                Enter Player's Names
+                initialize balances to 100
+                    Enter Bet Amount
+                        update playerbalance()
+                        Check Balance
+
+            Rolls dice until 4-5-6, a trip, point, or 1-2-3 occurs
+            Winner takes the pot
+            update player balances()
+        (3)Print Balances
+            prints player name and current balance
+        (4)Quit Game
+    repeat menu until quit or 1 player has all the money
+
+
+update playerbalances( name, bet)
+    adds/ subtracts amount that is won/lost in game
+    creates text file (erases text file every time it is altered and prints new information)
+    prints name and values to a text file
+
+
+
+
+Dice()
+    roll.random(6)
+
+
+
+Player()
+    String name
+    int balance
+    getName()
+    setName(String n)
+    getBalance()
+    setBalance(int b)
+
